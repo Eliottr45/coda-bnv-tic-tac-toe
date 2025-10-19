@@ -104,9 +104,8 @@ int bot(char** grille)
     return(random_number);
 }
 
-int verification(char** grille, char camp) // rajouter un parametre pour determiner si cest le joueur ou le robot qui gagne (camp ou symbole)
+int verification(char** grille, char camp) 
 {
-    int side = 0;
     int i = 0;
     while(i < 3)
     {
@@ -121,8 +120,6 @@ int verification(char** grille, char camp) // rajouter un parametre pour determi
             {
                 return(0);
             }
-            side = i + 1;
-            printf("Ligne %d est complete\n", side);
         }
         i++;
     }
@@ -139,8 +136,6 @@ int verification(char** grille, char camp) // rajouter un parametre pour determi
             {
                 return(0);
             }
-            side = i + 1;
-            printf("colonne %d est complete\n", side);
         }
         i++;
     }
@@ -154,7 +149,6 @@ int verification(char** grille, char camp) // rajouter un parametre pour determi
             {
                 return(0);
             }
-            printf("diagonale gauche est complete\n");
         }
     if(grille[0][2] == grille[1][1] && grille[0][2] == grille[2][0] && grille[0][2] != ' ' )
         {
@@ -166,7 +160,6 @@ int verification(char** grille, char camp) // rajouter un parametre pour determi
             {
                 return(0);
             }
-            printf("diagonale droite est complete\n");
         }
     return(42);
 }
