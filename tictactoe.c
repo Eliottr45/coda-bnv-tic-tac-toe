@@ -92,7 +92,7 @@ void print_grid(char**grille)
     printf("\n");
 }
 
-int bot(char** grille, int id)
+int bot(char** grille)
 {
     int pass = 0;
     int random_number;
@@ -249,7 +249,7 @@ void game(char**grille)
             printf("Égalité !\n");
             break;
         }
-        rep_robot = bot(grille, robot);
+        rep_robot = bot(grille);
         complete(grille, rep_robot, robot);
         resultat_partie = verification(grille, camp);
         print_grid(grille); 
