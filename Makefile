@@ -3,7 +3,6 @@
 NAME = test
 
 SRCS = main.c \
-	robot.c \
 	tictactoe.c
 
 all: $(NAME)
