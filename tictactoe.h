@@ -1,5 +1,5 @@
-#ifndef __ROBOT_H__
-#define __ROBOT_H__
+#ifndef __TICTACTOE_H__
+#define __TICTACTOE_H__
 
 //int opposent_placement(char*tab);
 //find_chain(char*tableau);
